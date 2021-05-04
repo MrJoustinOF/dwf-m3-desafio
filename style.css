@@ -135,6 +135,7 @@ nav a {
 }
 
 textarea {
+  resize: none;
   width: 376px;
   height: 113px;
 }
