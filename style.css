@@ -1,0 +1,249 @@
+:root {
+  --negro: #141414;
+  --negroClaro: #2c2c2c;
+  --blanco: #fff;
+  --grisOscuro: #c4c4c4;
+  --grisClaro: #fafafa;
+  --amarillo: #ffd953;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Roboto;
+  overflow-x: hidden;
+}
+
+header,
+footer {
+  background-image: url(img/herobg.png);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  font-size: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+.itemsMenu {
+  display: flex;
+  list-style: none;
+  margin-right: 30px;
+}
+
+.itemsMenu li {
+  margin: 0 20px;
+  font-weight: bolder;
+}
+
+.btnMenu img,
+.miLogo {
+  width: 60px;
+  height: 60px;
+}
+
+.btnMenu {
+  cursor: pointer;
+  display: none;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 35px 0px 35px;
+  align-items: center;
+}
+
+.joustinIMG {
+  width: 335px;
+}
+
+.about,
+.contactForm {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background: var(--negro);
+  color: var(--blanco);
+  padding: 100px;
+}
+
+.descripcion {
+  grid-column: 2;
+}
+
+.descripcion p {
+  padding: 25px 200px 0px 0px;
+}
+
+.checksvg {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 48px;
+  text-align: center;
+}
+
+.services {
+  background: var(--grisClaro);
+  padding: 50px;
+}
+
+.serviceH2 {
+  margin: 40px;
+  color: var(--negroClaro);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.serviceCard {
+  text-align: center;
+}
+
+.serviceCard p {
+  padding: 25px 50px 0px 50px;
+}
+
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactForm label {
+  font-size: 18px;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+.contactForm input {
+  width: 376px;
+  height: 45px;
+}
+
+textarea {
+  width: 376px;
+  height: 113px;
+}
+
+.btnSubmit {
+  background: var(--amarillo);
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 50px;
+}
+
+.footer {
+  background-color: rgba(196, 196, 196, 0.25);
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.footer ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+.footer ul li img {
+  margin: 0px 5px 0px 5px;
+}
+
+.logoLink {
+  width: 28px;
+  height: 28px;
+}
+
+@media (max-width: 768px) {
+  .itemsMenu {
+    display: none;
+  }
+
+  .btnMenu {
+    display: inline-flex;
+  }
+
+  .hero {
+    display: block;
+    padding: 0;
+  }
+
+  .hero h1 {
+    margin: 0px 10px 0px 10px;
+    text-align: center;
+  }
+
+  .joustinIMG {
+    width: 280px;
+    display: block;
+    margin: auto;
+  }
+
+  .about {
+    display: block;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .descripcion p {
+    padding: 25px 25px;
+  }
+
+  .checksvg {
+    width: 100px;
+  }
+
+  .cards {
+    display: block;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .serviceCard p {
+    padding: 25px 0 25px 0;
+    font-size: 16px;
+  }
+
+  .contactForm {
+    display: block;
+    padding: 30px 10px 30px 10px;
+  }
+
+  .contactForm {
+    text-align: center;
+    font-size: 32px;
+  }
+
+  .contactForm input,
+  .contactForm textarea {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .btnSubmit {
+    margin-top: 50px !important;
+  }
+
+  .footer {
+    display: block;
+  }
+
+  .footer ul {
+    margin-top: 50px;
+  }
+}
